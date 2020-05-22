@@ -18,10 +18,17 @@ const zooAnimals = [
 /* Request 1: .forEach()
 
 The zoos want to display both the scientific name and the animal name in front of the habitats. Populate the displayNames array with only the animal_name and scientific_name of each animal. displayNames will be an array of strings, and each string should follow this pattern: "Name: Jackal, asiatic, Scientific: Canis aureus."
-
+//1- display the scientific & animal name in front of habitats .
+//2- DISPLAY ARRAY only populate animal_name & scientific_name of each animal.
+//3- displayNames will be an ARRAY OF STRINGS
+//4- EACH STRINGS have pattern :  "Name: Jackal, asiatic, Scientific: Canis aureus."
 */
 const displayNames = [];
-console.log(displayNames);
+  zooAnimals.forEach(function(item) {
+    return displayNames.push(`${item.animal_name} and ${item.scientific_name});
+  });
+
+console.log(displayNames.toString());
 
 /* Request 2: .map()
 
